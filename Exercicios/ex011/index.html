@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Adaptativas</title>
+</head>
+<body>
+    <h1>Imagens Adaptativas</h1>
+    <p>aqui temos uma imagens que muda apartir do seu aparelho</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/Grande.png" alt="imagens flexíveis">
+    </picture>
+
+    <h1>vamos colocar um audio</h1>
+    <p>escute nosso audio</p>
+    <audio preload="metadata" autoplay controls loop><source src="midias/Lens - Bobby Richards.mp3" type="audio/mpeg">
+        <source src="midias/Lens - Bobby Richards.mp3" type="audio/ogg">
+        <source src="midias/Lens - Bobby Richards.mp3" type="audio/wav">
+    </audio>
+    <p>infelizmente seu navegador não consegue reproduzir o audio <a href="midias/Lens - Bobby Richards.mp3">baixe ele aqui</a></p>
+</body>
+</html>
